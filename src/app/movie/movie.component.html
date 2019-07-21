@@ -1,0 +1,18 @@
+<input class="input-search" type="search" placeholder="Search..."
+       [(ngModel)]="name" (input)="search()">
+<div fxLayout="row wrap"
+     fxLayoutAlign="center start"
+     fxLayoutGap="20px">
+  <div class="blocks"
+       *ngFor="let item of items"
+       [routerLink]="['/movie', item.id]"
+       fxFlex="20"
+       fxLayoutAlign="center" fxLayout="column">
+    <img [src]=' "../../assets/img/movie-covers/" + item.img' alt="img">
+    <p>{{item.name}}</p>
+  </div>
+</div>
+
+<div class="not-found" *ngIf="items.length <1">
+  Not Found
+</div>

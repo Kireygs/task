@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0 16px;
+  cursor: pointer;
+  position: relative;
+  letter-spacing: 0.05em;
+}
+
+.nav__link a {
+  color: #FFF;
+}
+

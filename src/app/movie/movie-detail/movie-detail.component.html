@@ -1,0 +1,28 @@
+<div class="content-detail" fxLayout="row"
+     fxLayoutAlign="center start" fxLayoutGap="40px">
+  <img class="detail-img" [src]=' "../../assets/img/movie-covers/" + movie.img' alt="img">
+  <div fxLayout="column" class="detail-data">
+    <h1>{{movie.name}}</h1>
+    <div fxLayout="column">
+      <div class="detail-line" fxLayout="row" fxLayoutGap="30px">
+        <h3>Genres:</h3>
+        <p>{{movie.genres}}</p>
+      </div>
+      <div class="detail-line" fxLayout="row" fxLayoutGap="50px">
+        <h3>Rate:</h3>
+        <p>{{movie.rate}}</p>
+      </div>
+      <div class="detail-line" fxLayout="row" fxLayoutGap="30px">
+        <h3>Length:</h3>
+        <p>{{movie.length}}</p>
+      </div>
+      <div class="detail-line" fxLayout="column">
+        <h3>Description:</h3>
+        <h4>{{movie.description}}</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
