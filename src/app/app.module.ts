@@ -17,16 +17,17 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {FilterPipe} from './filter.pipe';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule, MatIconModule, MatInputModule, MatSortModule, MatTableModule, MatPaginatorModule,
         MatDialogModule, MatListModule, MatGridListModule, MatAutocompleteModule, MatChipsModule,
         MAT_CHIPS_DEFAULT_OPTIONS,} from '@angular/material';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 
 
-const materialModules = [
+const MaterialModules = [
   MatTableModule,
   MatSortModule,
   MatPaginatorModule,
@@ -55,7 +56,9 @@ const materialModules = [
     FormsModule,
     AppRoutingModule,
     FlexLayoutModule,
-    materialModules
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModules
   ],
   providers: [MovieService,     {
     provide: MAT_CHIPS_DEFAULT_OPTIONS,

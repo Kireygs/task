@@ -11,14 +11,14 @@ export class MovieComponent implements OnInit {
   items: Movie[];
   name = '';
 
-  constructor(private service: MovieService) { }
+  constructor(private movieService: MovieService) { }
 
   ngOnInit() {
     this.getData();
   }
 
   getData() {
-    this.items = this.service.getData();
+    this.items = this.movieService.getData();
   }
 
   search() {
